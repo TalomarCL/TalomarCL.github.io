@@ -1,0 +1,532 @@
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TALOMAR - Consultoría Legal Especializada en Derecho Administrativo, Fiscal y Juicios de Amparo">
+  <meta name="author" content="TALOMAR">
+  <title>Consultoría Legal | TALOMAR</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap 4.6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bone: #e7dfcf;
+      --gold: #ffd700;
+      --mayonnaise: #f3f3c1;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--bone);
+      padding: 60px;
+      color: #000;
+      text-align: left;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+      height: 80px;
+      width: 80px;
+      vertical-align: middle;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      display: inline;
+      margin-left: 15px;
+      font-size: 3em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .navbar-custom {
+      background-color: #000000;
+    }
+
+    .navbar-custom .navbar-brand, 
+    .navbar-custom .nav-link {
+      color: white !important;
+    }
+
+    .navbar-custom .nav-link:hover {
+      color: #c4fcff !important;
+    }
+.navbar-custom .nav-link {
+  font-size: 1.2rem; /* Puedes ajustar el tamaño: 1.3rem, 1.5rem, etc. */
+  font-weight: 500; /* Opcional: para hacerlo un poco más marcado */
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: auto; /* Mantiene la proporción original */
+}
+
+    .portada-negra {
+      background-color: #000000;
+      color: #ffd700;
+    }
+
+    .btn-dorado {
+      background-color: var(--mayonnaise);
+      color: #000;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .btn-dorado:hover {
+      background-color: #ffcc00;
+      color: #fff;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+
+    footer p {
+      font-size: 1.1em;
+    }
+
+    #servicios {
+      background-color: #ffffff;
+    }
+
+    #servicios .service-item {
+      transition: all 0.3s ease;
+      padding: 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    #servicios .service-item:hover {
+      background-color: #f8f9fa;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .form-control {
+      padding: 12px;
+      border-radius: 5px;
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 1.5rem;
+    }
+
+    .lead {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+
+    @media (max-width: 768px) {
+      #servicios .service-item {
+        padding: 1rem !important;
+      }
+
+      #servicios .mr-4 {
+        margin-right: 1rem !important;
+      }
+
+      #servicios .fa-2x {
+        font-size: 1.5em !important;
+      }
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: var(--gold);
+      color: white;
+      padding: 12px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      text-align: center;
+      display: none;
+      z-index: 999;
+      transition: opacity 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .back-to-top:hover {
+      background-color: #c59d00;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-item {
+      flex: 1 1 300px;
+    }
+.parrafo-grande {
+  font-size: 1.3rem; /* Puedes ajustar a 1.5rem o más si lo quieres más grande */
+  line-height: 1.8;
+}
+
+  </style>
+</head>
+<body>
+
+<a href="#" class="back-to-top" id="btnBackToTop">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.jpeg" width="70" height="70" alt="Logo de TALOMAR Consultoría Legal">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="pagi1.html">Inicio</a></li>
+ 	<li class="nav-item"><a class="nav-link" href="pag2.html">Nuestros Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="pag3.html">Solicitar Información</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section id="portada" class="py-5 text-left fade-in portada-negra">
+    <div class="container">
+<h1 class="display-3 mb-4">TALOMAR Consultoría Legal</h1>
+<h2 style="font-size: 2.0rem;" class="mb-4">Abogados Especialistas en Derecho Administrativo, Fiscal y Juicios de Amparo</h2>
+    </div>
+</section>
+
+  <section id="mision" class="py-5 fade-in">
+    <div class="container text-center">
+     <p class="lead mb-4 text-start text-justify">En TALOMAR CONSULTORIA LEGAL, contamos con más de 10 años de experiencia que
+respaldan el Profesionalismo Jurídico con el que cuentan nuestros Abogados, en cada entidad
+Federativa del país; pues somos Juristas sumamente Capaces, Eficientes y Eficaces, pero sobre
+todo, comprometidos a resolver todos los problemas legales de nuestros clientes, en materia
+Administrativa y/o Fiscal, a través de los medios de defensa jurídica correspondientes.</p>
+
+
+<p class="lead mb-4 text-start text-justify">Lo anterior se afirma así, ya que nuestros Abogados cuentan con una carrera profesional bastante
+amplia, al haber prestado sus servicios jurídicos profesionales en el sector particular, así como en diversos Órganos de Gobierno de los tres niveles; obteniendo así, los conocimientos completos y
+necesarios para su optima defensa jurídica, razón por la cual, se cuenta con un absoluto
+conocimiento de la presentación, sustanciación, y la promoción de los medios de defensa legales;
+ello, a través de los Juicios Administrativos ante los Tribunales de Justica Administrativa, Federales
+y Estatales, así como de los Juicios de Amparo presentados en los Juzgados de Distrito, o los
+Tribunales Colegiados de Circuito, con jurisdicción en su Entidad Federativa .</p>
+      <p><a href="#contacto" class="btn btn-dorado">Solicitar Información</a></p>
+    </div>
+  </section>
+
+  <!-- Misión y Visión -->
+  <section id="mision-vision" class="py-5" style="background-color: #fef6e4;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+         <h2 class="display-5 mb-3">Nuestra Misión</h2>  
+          <p class="parrafo-grande">Brindar seguridad jurídica a nuestros clientes,
+a través de la prestación de nuestros servicios
+profesionales, asegurando la confianza y certeza
+de su situación legal, a través de su defensa legal
+mediante estrategias jurídicas oportunas, y
+presentación de juicios y recursos legales
+contemplados en la legislación del País, y de cada
+Entidad Federativa.</p>
+        </div>
+        <div class="col-md-6 text-center">
+         <h2 class="display-5 mb-3">Nuestra Visión</h2>
+          <p class="parrafo-grande">Ser la mejor opción a elegir, por excelencia, de los
+ciudadanos y empresas en México, para combatir
+cualquier acto jurídico que emitan las Autoridades
+Administrativas y Tributarias; que afecten su
+Patrimonio, o limiten el ejercicio de sus Derechos
+Humanos, Sociales y Económicos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="servicios" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-5 font-weight-bold text-dark mb-3">Nuestros Servicios</h2>
+      <p class="lead text-dark">Soluciones legales especializadas para proteger sus derechos</p>
+      <div class="divider mx-auto" style="width: 80px; height: 3px; background: var(--gold);"></div>
+    </div>
+
+    <div class="row">
+      <!-- Servicio 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="service-item h-100 p-4 border rounded">
+          <div class="d-flex align-items-start">
+            <div class="me-3" style="color: var(--gold);">
+              <i class="fas fa-file-invoice-dollar fa-2x"></i>
+            </div>
+            <div>
+              <h5 class="text-dark font-weight-bold mb-2 ">Requerimiento de pago de Impuesto Predial, con aviso de Embargo, y/o Ejecución Fiscal.</h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="service-item h-100 p-4 border rounded">
+          <div class="d-flex align-items-start">
+            <div class="me-3" style="color: var(--gold);">
+              <i class="fas fa-hand-holding-usd fa-2x"></i>
+            </div>
+            <div>
+              <h4 class="text-dark font-weight-bold mb-2 fs-4">Devolución del pago realizado por Impuesto sobre Adquisición de Inmuebles, en el Estado de México.</h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="col-md-6 mb-4">
+        <div class="service-item h-100 p-4 border rounded">
+          <div class="d-flex align-items-start">
+            <div class="me-3" style="color: var(--gold);">
+              <i class="fas fa-file-signature fa-2x"></i>
+            </div>
+            <div>
+              <h4 class="text-dark font-weight-bold mb-2 fs-4">Devolución del pago de los derechos de
+inscripción de la escritura pública, en el
+Instituto de la Función Registral del Estado de
+México.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 4 -->
+      <div class="col-md-6 mb-4">
+        <div class="service-item h-100 p-4 border rounded">
+          <div class="d-flex align-items-start">
+            <div class="me-3" style="color: var(--gold);">
+              <i class="fas fa-balance-scale fa-2x"></i>
+            </div>
+            <div>
+              <h4 class="text-dark font-weight-bold mb-2 fs-4">La omisión y/o la negación del Seguro Social, a
+brindar medicamentos o cirugías, por
+enfermedades crónicas, o casos de urgencia.</h4>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 5 -->
+      <div class="col-md-6 mb-4">
+        <div class="service-item h-100 p-4 border rounded">
+          <div class="d-flex align-items-start">
+            <div class="me-3" style="color: var(--gold);">
+              <i class="fas fa-clipboard-check fa-2x"></i>
+            </div>
+            <div>
+              <h5 class="text-dark font-weight-bold mb-2 fs-4">Requerimiento por diferencia o de falta pago
+del insumo de Agua, con apercibimiento de Embargo, por parte del Organismo de
+Prestación de servicios de Agua Potable y Alcantarillado Municipal.</h5>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 6 -->
+      <div class="col-md-6 mb-4">
+        <div class="service-item h-100 p-4 border rounded">
+          <div class="d-flex align-items-start">
+            <div class="me-3" style="color: var(--gold);">
+              <i class="fas fa-file-alt fa-2x"></i>
+            </div>
+            <div>
+              <h4 class="text-dark font-weight-bold mb-2 fs-4">Créditos Fiscales o Multas, determinados por
+Autoridades Tributarias Federales, ya sean de
+carácter Administrativo o Fiscal</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 7 -->
+      <div class="col-md-6 mb-4">
+        <div class="service-item h-100 p-4 border rounded">
+          <div class="d-flex align-items-start">
+            <div class="me-3" style="color: var(--gold);">
+              <i class="fas fa-landmark fa-2x"></i>
+            </div>
+            <div>
+              <h3 class="text-dark font-weight-bold mb-2 fs-4">Multas Administrativas Locales.</h3>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 8 -->
+      <div class="col-md-6 mb-4">
+        <div class="service-item h-100 p-4 border rounded">
+          <div class="d-flex align-items-start">
+            <div class="me-3" style="color: var(--gold);">
+              <i class="fas fa-gavel fa-2x"></i>
+            </div>
+            <div>
+              <h4 class="text-dark font-weight-bold mb-2 fs-4">Trámite y obtención de Licencias o Permisos
+Municipales y/o Estatales</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 9 -->
+      <div class="col-md-6 mb-4">
+        <div class="service-item h-100 p-4 border rounded">
+          <div class="d-flex align-items-start">
+            <div class="me-3" style="color: var(--gold);">
+              <i class="fas fa-shield-alt fa-2x"></i>
+            </div>
+            <div>
+              <h4 class="text-dark font-weight-bold mb-2 fs-4">Demandas por Responsabilidad Patrimonial del
+Estado. </h4>
+                 </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 10 -->
+      <div class="col-md-6 mb-4">
+        <div class="service-item h-100 p-4 border rounded">
+          <div class="d-flex align-items-start">
+            <div class="me-3" style="color: var(--gold);">
+              <i class="fas fa-briefcase fa-2x"></i>
+            </div>
+            <div>
+              <h4 class="text-dark font-weight-bold mb-2 fs-4">Juicios Arbitrales, (Conflictos entre
+Condóminos y Administradores</h4>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<p style="text-align: center;">
+<a href="pag2.html" class="btn btn-dorado">Conoce más de Nuestros Servicios</a></p>
+</section>
+
+
+<section class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center p-5 rounded-lg" style="background-color: var(--bone); box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 15px;">
+                    <h2 class="mb-4" style="color: #333; font-weight: 600;">Tu tranquilidad legal es nuestra prioridad.</h2>
+                    <p class="lead mb-4" style="color: #555;">Contáctanos y recibe una atención personalizada, con soluciones jurídicas diseñadas a tu medida.</p>
+
+<p style="text-align: center;">
+<a href="pag3.html" class="btn btn-dorado">Agenda una cita</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h4>Contacto</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <i class="fas fa-phone-alt mr-2"></i> +52 55 1918 8542
+            </li>
+            <li>
+              <i class="far fa-envelope mr-2"></i> talomarconsultorialegal@gmail.com
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4>Horarios de Atención</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Lunes a Viernes:</strong> 8:00 AM – 8:00 PM</li>
+            <li><strong>Sábados:</strong> Solo con cita</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2025 TALOMAR - Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const faders = document.querySelectorAll('.fade-in');
+      const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+      faders.forEach(fader => appearOnScroll.observe(fader));
+    });
+  </script>
+<script>
+  const btn = document.getElementById("btnBackToTop");
+
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>
