@@ -193,13 +193,17 @@
 }
 .fondo1 {
   background-image: url('im3.png');
-  background-size: cover;
-  background-position: center;
+  background-size: 100px 50px;         /* Imagen de fondo más pequeña */
+  background-position: center;         /* Centrada en el contenedor */
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 200px 100px;
- color: white;
+  background-attachment: fixed;        /* Fondo fijo al hacer scroll */
+  
+  padding: 80px 20px;                  /* Espaciado interno */
+  color: white;
+  font-size: 16px;                     /* Tamaño fijo del texto */
+  line-height: 1.5;                    /* Altura de línea para legibilidad */
 }
+
 .resaltado {
   font-weight: bold;
   color: #111; /* o cualquier color oscuro o distintivo */
